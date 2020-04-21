@@ -1,0 +1,9 @@
+﻿  DimmensionWorldConsole.cpp
+e:\mybeautifulworld\illusion_elf\elf\dimmensionworldconsole.cpp(88): warning C4551: 缺少参数列表的函数调用
+  IllusionElf.cpp
+  正在生成代码
+  33 of 3680 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
+    30 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  IllusionElf.vcxproj -> E:\MyBeautifulWorld\ILLUSION_ELF\Release\IllusionElf.exe

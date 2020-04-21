@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{73A9F714-CC0D-4952-82E8-1E72500F99FB}</ProjectGuid>
+    <RootNamespace>IllusionElf</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>..\Elf\tools32\debug\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(OutDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>..\Elf\tools32\relase\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>..\Elf\tools64\relase\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\Elf\include\glm;..\Elf\include\imgui;..\Elf\include\imgui\other;..\Elf\include\fbx;..\Elf\include\KHR;..\Elf\include\glad;..\Elf\include\PQE;..\Elf\include;..\Elf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libfbxsdk-md.lib;libxml2-md.lib;zlib-md.lib;STB_IMAGE.lib;assimp-vc140-mt.lib;opengl32.lib;glfw3.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <BuildLog>
+      <Path>$(OutDir)$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\Elf\include\glm;..\Elf\include\imgui;..\Elf\include\imgui\other;..\Elf\include\fbx;..\Elf\include\KHR;..\Elf\include\glad;..\Elf\include\PQE;..\Elf\include;..\Elf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG ;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glfw3.lib;libfbxsdk-md.lib;libxml2-md.lib;zlib-md.lib;STB_IMAGE.lib;assimp-vc140-mt.lib;opengl32.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\Elf\include\glm;..\Elf\include\imgui;..\Elf\include\imgui\other;..\Elf\include\fbx;..\Elf\include\KHR;..\Elf\include\glad;..\Elf\include\PQE;..\Elf\include;..\Elf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glfw3dll.lib;libfbxsdk-md.lib;libxml2-md.lib;zlib-md.lib;assimp-vc141-mt.lib;opengl32.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Elf\DimmensionWorldConsole.h" />
+    <ClInclude Include="..\Elf\fantastic.h" />
+    <ClInclude Include="..\Elf\include\glad\glad.h" />
+    <ClInclude Include="..\Elf\include\imgui\imconfig.h" />
+    <ClInclude Include="..\Elf\include\imgui\imgui.h" />
+    <ClInclude Include="..\Elf\include\imgui\imgui_internal.h" />
+    <ClInclude Include="..\Elf\include\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\Elf\include\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\Elf\include\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\Elf\include\imgui\other\imgui_impl_glfw.h" />
+    <ClInclude Include="..\Elf\include\imgui\other\imgui_impl_opengl2.h" />
+    <ClInclude Include="..\Elf\include\PQE\Biological.h" />
+    <ClInclude Include="..\Elf\include\PQE\Camera.h" />
+    <ClInclude Include="..\Elf\include\PQE\PlugIn.h" />
+    <ClInclude Include="..\Elf\include\PQE\PlugInContainer.h" />
+    <ClInclude Include="..\Elf\include\PQE\PurpleDreamElf.h" />
+    <ClInclude Include="..\Elf\include\PQE\QdeModel.h" />
+    <ClInclude Include="..\Elf\include\PQE\shader.h" />
+    <ClInclude Include="..\Elf\include\PQE\Shadow.h" />
+    <ClInclude Include="..\Elf\include\PQE\TimerTask.h" />
+    <ClInclude Include="..\Elf\include\stb_image.h" />
+    <ClInclude Include="..\Elf\QdeRender.h" />
+    <ClInclude Include="PQEControlGUI.h" />
+    <ClInclude Include="IllusionElfImGui.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Elf\DimmensionWorldConsole.cpp" />
+    <ClCompile Include="..\Elf\fantastic.cpp" />
+    <ClCompile Include="..\Elf\include\glad.c" />
+    <ClCompile Include="..\Elf\include\imgui\imgui.cpp" />
+    <ClCompile Include="..\Elf\include\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\Elf\include\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\Elf\include\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\Elf\include\imgui\other\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\Elf\include\imgui\other\imgui_impl_opengl2.cpp" />
+    <ClCompile Include="..\Elf\include\PQE\Biological.cpp" />
+    <ClCompile Include="..\Elf\include\PQE\Camera.cpp" />
+    <ClCompile Include="..\Elf\include\PQE\PlugIn.cpp" />
+    <ClCompile Include="..\Elf\include\PQE\PlugInContainer.cpp" />
+    <ClCompile Include="..\Elf\include\PQE\PurpleDreamElf.cpp" />
+    <ClCompile Include="..\Elf\include\PQE\QdeModel.cpp" />
+    <ClCompile Include="..\Elf\include\PQE\shader.cpp" />
+    <ClCompile Include="..\Elf\include\PQE\Shadow.cpp" />
+    <ClCompile Include="..\Elf\include\PQE\TimerTask.cpp" />
+    <ClCompile Include="..\Elf\include\stb_image.cpp" />
+    <ClCompile Include="..\Elf\QdeRender.cpp" />
+    <ClCompile Include="PQEControlGUI.cpp" />
+    <ClCompile Include="IllusionElfImGui.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Elf\magic\shader\modelLight.fs" />
+    <None Include="..\Elf\magic\shader\modelLight.vs" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

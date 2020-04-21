@@ -1,0 +1,40 @@
+﻿  DimmensionWorldConsole.cpp
+e:\mybeautifulworld\illusion_elf_imagui\elf\dimmensionworldconsole.h(4): fatal error C1083: 无法打开包括文件: “PurpleDreamElf.h”: No such file or directory
+  fantastic.cpp
+e:\mybeautifulworld\illusion_elf_imagui\elf\include\glad\glad.h(95): fatal error C1083: 无法打开包括文件: “KHR/khrplatform.h”: No such file or directory
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_widgets.cpp
+  imgui_impl_glfw.cpp
+e:\mybeautifulworld\illusion_elf_imagui\elf\include\imgui\other\imgui_impl_glfw.cpp(35): fatal error C1083: 无法打开包括文件: “imgui.h”: No such file or directory
+  imgui_impl_opengl2.cpp
+e:\mybeautifulworld\illusion_elf_imagui\elf\include\imgui\other\imgui_impl_opengl2.cpp(31): fatal error C1083: 无法打开包括文件: “imgui.h”: No such file or directory
+  Biological.cpp
+e:\mybeautifulworld\illusion_elf_imagui\elf\include\pqe\qdemodel.h(4): fatal error C1083: 无法打开包括文件: “PQE\PurpleDreamElf.h”: No such file or directory
+  Camera.cpp
+e:\mybeautifulworld\illusion_elf_imagui\elf\include\pqe\camera.h(5): fatal error C1083: 无法打开包括文件: “glad/glad.h”: No such file or directory
+  PlugIn.cpp
+  PlugInContainer.cpp
+e:\mybeautifulworld\illusion_elf_imagui\elf\include\pqe\plugincontainer.cpp(18): error C2664: “HANDLE FindFirstFileA(LPCSTR,LPWIN32_FIND_DATAA)”: 无法将参数 1 从“const _Elem *”转换为“LPCSTR”
+          with
+          [
+              _Elem=wchar_t
+          ]
+  e:\mybeautifulworld\illusion_elf_imagui\elf\include\pqe\plugincontainer.cpp(18): note: 与指向的类型无关；强制转换要求 reinterpret_cast、C 样式强制转换或函数样式强制转换
+e:\mybeautifulworld\illusion_elf_imagui\elf\include\pqe\plugincontainer.cpp(32): error C2440: “<function-style-cast>”: 无法从“CHAR [260]”转换为“std::wstring”
+  e:\mybeautifulworld\illusion_elf_imagui\elf\include\pqe\plugincontainer.cpp(32): note: 无构造函数可以接受源类型，或构造函数重载决策不明确
+  PurpleDreamElf.cpp
+e:\mybeautifulworld\illusion_elf_imagui\elf\include\pqe\purpledreamelf.h(4): fatal error C1083: 无法打开包括文件: “fantastic.h”: No such file or directory
+  QdeModel.cpp
+e:\mybeautifulworld\illusion_elf_imagui\elf\include\pqe\qdemodel.h(4): fatal error C1083: 无法打开包括文件: “PQE\PurpleDreamElf.h”: No such file or directory
+  shader.cpp
+e:\mybeautifulworld\illusion_elf_imagui\elf\include\pqe\shader.h(5): fatal error C1083: 无法打开包括文件: “glad/glad.h”: No such file or directory
+  Shadow.cpp
+e:\mybeautifulworld\illusion_elf_imagui\elf\include\pqe\shadow.h(4): fatal error C1083: 无法打开包括文件: “PQE\PurpleDreamElf.h”: No such file or directory
+  TimerTask.cpp
+  stb_image.cpp
+  QdeRender.cpp
+  IllusionElfImGui.cpp
+e:\mybeautifulworld\illusion_elf_imagui\illusionelfimgui\illusionelfimgui.h(1): fatal error C1083: 无法打开包括文件: “DimmensionWorldConsole.h”: No such file or directory
+  正在生成代码...
